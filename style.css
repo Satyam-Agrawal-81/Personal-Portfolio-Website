@@ -61,17 +61,17 @@ span{
 
 .detel a{
     background:orange; ;
-    padding: 10px 18 px;
-    text-decoration: none;
+    padding: 10px 20px;
+    text-decoration:none;
     font-weight: bold;
-    color: #fff;
+    color: #000;
     display: inline-block;
     margin: 30px 0;
     border-radius: 5px;
 
 }
 .detel a:hover{
-    color: black;
+    color: blue;
 }
 .images{
     width: 45%;
@@ -82,9 +82,21 @@ span{
     border: #212121;
 }
 
-.images img{
+.images img.shape{
     height: 60%;
-    width: 70%;
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    bottom: 30%;
+    
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+    border: #212121;
+}
+
+.images img.boy{
+    height: 50%;
+    width: 50%;
     position: absolute;
     left: 50%;
     bottom: 30%;
@@ -94,10 +106,17 @@ span{
     border: #212121;
 }
 .images:hover .shape{
-   bottom: 40px;
-   
+   bottom: 50px;
+   left: 25px;
+   /* width: 50%;
+   height:50%; */
 }
-
+.images:hover .boy{
+    top:45px;
+    /* right: 25px; */
+    /* height: 50%;
+    width: 50%; */
+}
 .hey:hover{
 color: orangered;
 }
