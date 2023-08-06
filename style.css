@@ -20,8 +20,8 @@ nav{
     justify-content: space-between;
 }
 nav img{
-    width:5%;
-    height: 10%;
+    width:20%;
+    height: 20%;
 }
 nav ul li{
     display: inline-block;
@@ -84,10 +84,11 @@ span{
 
 .images img{
     height: 60%;
-    width: 50%;
-    position: relative;
+    width: 70%;
+    position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: 30%;
+    
     transform: translateX(-50%);
     transition: bottom 1s, left 1s;
     border: #212121;
